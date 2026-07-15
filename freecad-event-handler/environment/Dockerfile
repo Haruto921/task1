@@ -9,7 +9,7 @@ RUN apt-get update \
 WORKDIR /build
 
 COPY Cargo.toml .
-COPY src/ ./src/
+COPY src ./src
 
 RUN cargo build --release
 

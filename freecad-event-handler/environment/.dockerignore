@@ -17,3 +17,5 @@ tests/
 instruction.md
 task.toml
 submission/
+**/*.md
+!Cargo.toml

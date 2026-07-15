@@ -1,24 +1,45 @@
 ```
-# Dependencies
-target/
-
-# Logs and temp files
-*.log
-*.tmp
-
-# Environment
-.env
-.env.local
-*.env.*
-
-# Editors
-.vscode/
-.idea/
-
-# OS
-.DS_Store
-Thumbs.db
-
 # Rust/Cargo specific
+target/
 Cargo.lock
+
+# Dependencies
+**/node_modules/
+**/venv/
+**/env/
+**/.env
+**/.env.*
+**/__pycache__/
+**/.mypy_cache/
+**/.pytest_cache/
+
+# Build artifacts
+**/build/
+**/dist/
+**/*.pyc
+**/__pycache__/
+**/*.o
+**/*.obj
+**/*.a
+**/*.so
+**/*.dll
+**/*.exe
+
+# Editors/IDEs
+**/.vscode/
+**/.idea/
+**/*.swp
+**/*.swo
+
+# System files
+**/.DS_Store
+**/Thumbs.db
+**/*.log
+**/*.tmp
+**/coverage/
+**/htmlcov/
+**/.coverage
+
+# Docker
+**/.dockerignore
 ```
